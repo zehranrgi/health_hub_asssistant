@@ -5,11 +5,12 @@ Interactive chat interface for healthcare agent
 import streamlit as st
 import sys
 import os
+import base64
 
 # Add parent directory to path
 sys.path.append(os.path.dirname(os.path.abspath(__file__)))
 
-from agent.healthhub_agent import chat, vector_store
+from agent.healthhub_agent import chat, vector_store, analyze_prescription_image
 
 # Page configuration
 st.set_page_config(
@@ -99,9 +100,47 @@ with st.sidebar:
     - 💉 Vaccine scheduling
     - 🏪 CVS services & hours
     - 💳 Insurance coverage
+    - 📸 **NEW!** Prescription image analysis
 
     *This is informational only - always consult healthcare providers for medical decisions.*
     """)
+
+    st.header("Analyze Prescription Image")
+    st.write("Upload a prescription or medication photo")
+
+    uploaded_file = st.file_uploader(
+        "Choose an image...",
+        type=["jpg", "jpeg", "png"],
+        help="Upload prescription, medication bottle, or pharmacy label"
+    )
+
+    if uploaded_file is not None:
+        # Display image
+        st.image(uploaded_file, caption="Uploaded Image", use_container_width=True)
+
+        if st.button("🔍 Analyze Image", type="primary"):
+            with st.spinner("🤖 Analyzing with NVIDIA AI..."):
+                try:
+                    # Convert to base64
+                    image_bytes = uploaded_file.read()
+                    image_b64 = base64.b64encode(image_bytes).decode()
+
+                    # Analyze
+                    result = analyze_prescription_image(image_b64, "base64")
+
+                    if result["success"]:
+                        st.session_state.messages.append({
+                            "role": "assistant",
+                            "content": f"📸 **Image Analysis Results:**\n\n{result['analysis']}"
+                        })
+                        st.success(" Analysis complete! Check chat below.")
+                        st.rerun()
+                    else:
+                        st.error(f"{result.get('error', 'Analysis failed')}")
+                except Exception as e:
+                    st.error(f" Error: {str(e)}")
+
+    st.divider()
 
     st.header("Quick Actions")
     example_queries = [
@@ -124,6 +163,7 @@ with st.sidebar:
         vs_stats = vector_store.get_collection_stats()
         st.header("System Status")
         st.success(f" Knowledge Base: {vs_stats['total_chunks']} documents")
+        st.info("🤖 NVIDIA Multimodal AI: Active")
     except:
         st.warning("Knowledge base not loaded")
 
@@ -140,29 +180,22 @@ if "messages" not in st.session_state:
         "content": """👋 Welcome to CVS HealthHub AI!
 
 I can help you with:
-- Medication information and side effects
-- Drug interaction checks
-- Vaccine availability and scheduling
-- CVS pharmacy services and hours
-- Insurance coverage questions
+- 💊 Medication information and side effects
+- ⚕️ Drug interaction checks
+- 💉 Vaccine availability and scheduling
+- 🏪 CVS pharmacy services and hours
+- 💳 Insurance coverage questions
+- 📸  Prescription image analysis (upload in sidebar)
+
+**Try uploading a prescription image** in the sidebar for AI-powered analysis using NVIDIA's multimodal model!
 
 What would you like to know?"""
     })
 
 # Display chat history
 for msg in st.session_state.messages:
-    if msg["role"] == "assistant":
-        st.markdown(f"""
-        <div class="chat-box-assistant">
-        {msg["content"]}
-        </div>
-        """, unsafe_allow_html=True)
-    else:
-        st.markdown(f"""
-        <div class="chat-box-user">
-        {msg["content"]}
-        </div>
-        """, unsafe_allow_html=True)
+    with st.chat_message(msg["role"]):
+        st.markdown(msg["content"])
 
 # Handle selected query from sidebar
 if "selected_query" in st.session_state:
@@ -173,37 +206,33 @@ else:
 
 # Process user input
 if user_input:
-    # Add user message
-    st.session_state.messages.append({"role": "user", "content": user_input})
+    # Display user message
+    with st.chat_message("user"):
+        st.markdown(user_input)
 
-    st.markdown(f"""
-    <div class="chat-box-user">
-    {user_input}
-    </div>
-    """, unsafe_allow_html=True)
-
-    # Get agent response
+    # Get agent response (pass history BEFORE adding current message)
     with st.spinner("🔍 Searching knowledge base and analyzing..."):
         try:
             result = chat(user_input, st.session_state.messages)
             response = result["response"]
             tool_calls = result.get("tool_calls", 0)
 
-            st.markdown(f"""
-            <div class="chat-box-assistant">
-            {response}
-            </div>
-            """, unsafe_allow_html=True)
+            # Display assistant response
+            with st.chat_message("assistant"):
+                st.markdown(response)
 
-            # Show tool usage indicator
-            if tool_calls > 0:
-                st.caption(f"✨ Used {tool_calls} tool(s) to answer this question")
+                # Show tool usage indicator
+                if tool_calls > 0:
+                    st.caption(f"✨ Used {tool_calls} tool(s) to answer this question")
 
+            # Add both messages to history
+            st.session_state.messages.append({"role": "user", "content": user_input})
             st.session_state.messages.append({"role": "assistant", "content": response})
 
         except Exception as e:
             error_msg = f"⚠️ Error: {str(e)}\n\nPlease try rephrasing your question."
             st.error(error_msg)
+            st.session_state.messages.append({"role": "user", "content": user_input})
             st.session_state.messages.append({"role": "assistant", "content": error_msg})
 
 # Footer

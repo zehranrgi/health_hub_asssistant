@@ -4,12 +4,14 @@ Agentic RAG system for healthcare information, prescriptions, and appointments
 """
 import os
 import sqlite3
-from typing import List, Dict, Any
+from typing import List, Dict, Any, Optional
 from langchain_openai import ChatOpenAI
 from langchain_core.tools import tool
+from langchain_core.messages import HumanMessage
 from langgraph.prebuilt import create_react_agent
 from dotenv import load_dotenv
 import sys
+import base64
 sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 from rag.vector_store import initialize_vector_store
 
@@ -29,6 +31,18 @@ llm = ChatOpenAI(
     default_headers={
         "HTTP-Referer": "https://cvs-healthhub-ai.com",
         "X-Title": "CVS HealthHub AI Assistant"
+    }
+)
+
+# Initialize multimodal LLM for vision tasks (NVIDIA Nemotron)
+vision_llm = ChatOpenAI(
+    model=os.getenv("OPENROUTER_MODEL", "nvidia/nemotron-nano-12b-v2-vl:free"),
+    temperature=0.3,
+    openai_api_key=os.getenv("OPENROUTER_API_KEY"),
+    openai_api_base=os.getenv("OPENROUTER_BASE_URL", "https://openrouter.ai/api/v1"),
+    default_headers={
+        "HTTP-Referer": "https://cvs-healthhub-ai.com",
+        "X-Title": "CVS HealthHub AI - Vision Analysis"
     }
 )
 
@@ -211,6 +225,110 @@ Most Medicare and major insurance plans are accepted at CVS."""
         return f"Error checking coverage: {str(e)}"
 
 
+def analyze_prescription_image(image_data: str, image_type: str = "base64") -> Dict[str, Any]:
+    """
+    Analyze prescription or medication images using NVIDIA's multimodal model.
+    Extracts medication names, dosages, instructions, and provides safety information.
+
+    This is NOT a tool for the agent, but a standalone function called from API/UI.
+
+    Args:
+        image_data: Base64 encoded image or file path
+        image_type: Type of input ("base64" or "file")
+
+    Returns:
+        Dictionary with analysis results including medications found, warnings, and recommendations
+    """
+    try:
+        # Prepare image for vision model
+        if image_type == "file":
+            with open(image_data, "rb") as img_file:
+                image_b64 = base64.b64encode(img_file.read()).decode()
+        else:
+            image_b64 = image_data
+
+        # Create vision prompt
+        vision_prompt = """You are a pharmaceutical image analysis expert for CVS HealthHub AI.
+
+Analyze this prescription or medication image and extract:
+
+1. **Medication Names**: All medications visible (brand and generic names)
+2. **Dosage Information**: Strength, quantity, frequency
+3. **Instructions**: Usage directions if visible
+4. **Patient Information**: Any visible patient details (for verification)
+5. **Prescriber Information**: Doctor/pharmacy details if present
+6. **Warnings**: Any special warnings or precautions visible
+
+Then provide:
+- **Safety Check**: Key drug interaction warnings
+- **Next Steps**: What the patient should do (verify with pharmacist, etc.)
+- **CVS Services**: Relevant CVS services (prescription transfer, auto-refill, etc.)
+
+Format your response clearly with headers. If text is unclear, indicate that.
+If this is NOT a prescription/medication image, politely state that."""
+
+        # Call vision model
+        message = HumanMessage(
+            content=[
+                {"type": "text", "text": vision_prompt},
+                {
+                    "type": "image_url",
+                    "image_url": {
+                        "url": f"data:image/jpeg;base64,{image_b64}"
+                    }
+                }
+            ]
+        )
+
+        response = vision_llm.invoke([message])
+        analysis_text = response.content
+
+        # Extract medication names for additional context
+        medications_mentioned = []
+        # Simple extraction - look for common medication patterns
+        import re
+        med_pattern = r'\b[A-Z][a-z]+(?:ol|il|am|in|ox|ine|ide|ate)\b'
+        medications_mentioned = list(set(re.findall(med_pattern, analysis_text)))
+
+        # Get additional info from knowledge base for mentioned medications
+        additional_info = []
+        if medications_mentioned:
+            for med in medications_mentioned[:3]:  # Top 3 to avoid overload
+                try:
+                    results = vector_store.similarity_search(
+                        query=f"{med} medication information",
+                        k=1,
+                        filter_dict={"category": "medication"}
+                    )
+                    if results:
+                        additional_info.append(f"\n📚 **{med} Info from Database:**\n{results[0]['content']}\n")
+                except:
+                    pass
+
+        # Combine analysis with knowledge base info
+        full_response = analysis_text
+        if additional_info:
+            full_response += "\n\n---\n## Additional Information from CVS Knowledge Base\n"
+            full_response += "\n".join(additional_info)
+
+        full_response += "\n\n⚠️ **Disclaimer**: This is an automated analysis. Always verify prescription details with your CVS pharmacist before taking any medication."
+
+        return {
+            "success": True,
+            "analysis": full_response,
+            "medications_detected": medications_mentioned,
+            "has_additional_info": len(additional_info) > 0
+        }
+
+    except Exception as e:
+        return {
+            "success": False,
+            "error": f"Image analysis failed: {str(e)}",
+            "analysis": "Unable to analyze image. Please ensure the image is clear and try again.",
+            "medications_detected": []
+        }
+
+
 # Agent tools
 tools = [
     search_medication_info,
@@ -252,11 +370,11 @@ agent = create_react_agent(llm, tools, prompt=system_prompt)
 
 def chat(user_input: str, chat_history: List[Dict] = None) -> Dict[str, Any]:
     """
-    Process user input through healthcare agent
+    Process user input through healthcare agent with conversation history
 
     Args:
         user_input: User's question or request
-        chat_history: Previous conversation history
+        chat_history: Previous conversation history (list of message dicts)
 
     Returns:
         Response with agent's answer and updated history
@@ -265,9 +383,23 @@ def chat(user_input: str, chat_history: List[Dict] = None) -> Dict[str, Any]:
         chat_history = []
 
     try:
-        # Invoke agent
+        # Build messages list with history
+        messages = []
+
+        # Add previous messages (skip welcome message, keep only real conversation)
+        for msg in chat_history:
+            if msg["role"] in ["user", "assistant"] and "Welcome to CVS" not in msg["content"]:
+                messages.append({
+                    "role": msg["role"],
+                    "content": msg["content"]
+                })
+
+        # Add current user message
+        messages.append({"role": "user", "content": user_input})
+
+        # Invoke agent with full conversation context
         result = agent.invoke({
-            "messages": [{"role": "user", "content": user_input}]
+            "messages": messages
         })
 
         # Extract response

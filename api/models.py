@@ -140,3 +140,33 @@ class ErrorResponse(BaseModel):
                 "success": False
             }
         }
+
+
+class ImageAnalysisRequest(BaseModel):
+    """Request model for image analysis endpoint"""
+    image_base64: str = Field(..., description="Base64 encoded image")
+
+    class Config:
+        json_schema_extra = {
+            "example": {
+                "image_base64": "iVBORw0KGgoAAAANSUhEUgAAAAEAAAABCAYAAAAfFcSJAAAADUlEQVR42mNk+M9QDwADhgGAWjR9awAAAABJRU5ErkJggg=="
+            }
+        }
+
+
+class ImageAnalysisResponse(BaseModel):
+    """Response model for image analysis endpoint"""
+    analysis: str = Field(..., description="Detailed image analysis")
+    medications_detected: List[str] = Field(default=[], description="List of medications detected in image")
+    has_additional_info: bool = Field(default=False, description="Whether additional info from knowledge base was included")
+    success: bool = Field(default=True, description="Request success status")
+
+    class Config:
+        json_schema_extra = {
+            "example": {
+                "analysis": "**Medication Names**: Lisinopril 10mg\n**Dosage**: Take 1 tablet daily...",
+                "medications_detected": ["Lisinopril"],
+                "has_additional_info": True,
+                "success": True
+            }
+        }

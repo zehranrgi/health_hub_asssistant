@@ -15,9 +15,10 @@ sys.path.append(os.path.dirname(os.path.dirname(os.path.abspath(__file__))))
 
 from api.models import (
     ChatRequest, ChatResponse, SearchRequest, SearchResponse,
-    HealthCheckResponse, MetricsResponse, ErrorResponse, SearchResult
+    HealthCheckResponse, MetricsResponse, ErrorResponse, SearchResult,
+    ImageAnalysisRequest, ImageAnalysisResponse
 )
-from agent.healthhub_agent import chat as agent_chat, vector_store
+from agent.healthhub_agent import chat as agent_chat, vector_store, analyze_prescription_image
 from dotenv import load_dotenv
 
 load_dotenv()
@@ -204,6 +205,51 @@ async def search_endpoint(request: SearchRequest):
         raise HTTPException(
             status_code=500,
             detail=f"Error performing search: {str(e)}"
+        )
+
+
+@app.post("/analyze-image", response_model=ImageAnalysisResponse, tags=["Vision"])
+async def analyze_image_endpoint(request: ImageAnalysisRequest):
+    """
+    Analyze prescription or medication images using NVIDIA's multimodal model
+    Extracts medication info, dosage, and provides safety recommendations
+
+    Example:
+    ```json
+    {
+        "image_base64": "base64_encoded_image_string"
+    }
+    ```
+    """
+    try:
+        # Analyze image
+        result = analyze_prescription_image(
+            image_data=request.image_base64,
+            image_type="base64"
+        )
+
+        if not result["success"]:
+            raise HTTPException(
+                status_code=400,
+                detail=result.get("error", "Image analysis failed")
+            )
+
+        # Update metrics
+        metrics["total_requests"] += 1
+
+        return ImageAnalysisResponse(
+            analysis=result["analysis"],
+            medications_detected=result.get("medications_detected", []),
+            has_additional_info=result.get("has_additional_info", False),
+            success=True
+        )
+
+    except HTTPException:
+        raise
+    except Exception as e:
+        raise HTTPException(
+            status_code=500,
+            detail=f"Error analyzing image: {str(e)}"
         )
 
 
