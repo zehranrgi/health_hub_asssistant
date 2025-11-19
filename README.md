@@ -286,7 +286,7 @@ Ready for deployment to Azure Container Apps via GitHub Actions CI/CD pipeline.
 - [x] 5 healthcare agent tools
 - [x] FastAPI REST API
 - [x] Streamlit UI
-- [x] Sample healthcare data (100+ documents)
+- [x] Sample healthcare data (40+ documents)
 - [ ] RAGAS evaluation framework
 - [ ] Docker containerization
 - [ ] GitHub Actions CI/CD
