@@ -1,0 +1,132 @@
+CVS PHARMACY - VACCINE INFORMATION
+
+=== INFLUENZA (FLU) VACCINE ===
+Category: Annual Vaccine
+Availability: September through March (peak flu season)
+Who Needs It: Everyone 6 months and older, especially high-risk groups (65+, chronic conditions, pregnant women)
+Types Available:
+- Standard flu shot (ages 6 months+)
+- High-dose flu shot (ages 65+, stronger immune response)
+- Flu shot for egg allergy patients
+Schedule: Once per year, preferably by end of October
+Side Effects: Soreness at injection site, mild fever, body aches for 1-2 days
+Cost: Usually covered 100% by insurance, Medicare Part B
+Walk-ins: Accepted at most CVS locations
+Important: Takes 2 weeks to develop full immunity
+Source: CDC Vaccine Guidelines
+
+=== COVID-19 VACCINE ===
+Category: Updated Annual Vaccine
+Availability: Year-round, updated formulas each fall
+Who Needs It: Everyone 6 months and older
+Brands Available:
+- Pfizer-BioNTech (mRNA)
+- Moderna (mRNA)
+- Novavax (protein-based)
+Schedule:
+- Primary series: 1-2 doses depending on age and vaccine type
+- Boosters: Recommended annually, especially for 65+ and immunocompromised
+Side Effects: Arm soreness, fatigue, headache, mild fever, chills (usually 1-2 days)
+Cost: Covered by insurance and Medicare. Free for uninsured through federal program.
+Important: Can be given same time as flu vaccine
+Appointments: Recommended, but walk-ins accepted
+Source: CDC and FDA Emergency Use Authorization
+
+=== SHINGLES VACCINE (Shingrix) ===
+Category: Two-dose series
+Availability: Year-round
+Who Needs It: Adults 50 years and older, even if had shingles before
+Why Important: Prevents shingles (painful rash) and post-herpetic neuralgia (long-lasting nerve pain)
+Schedule: Two doses, 2-6 months apart. Both doses required for full protection.
+Effectiveness: Over 90% effective at preventing shingles
+Side Effects: Sore arm, fatigue, muscle aches, headache, fever (stronger reaction than most vaccines, lasts 2-3 days)
+Cost: Covered by Medicare Part D and most insurance plans
+Important: Much more effective than older shingles vaccine (Zostavax)
+Note: Side effects are normal and indicate immune response is working
+Source: CDC ACIP Recommendations
+
+=== PNEUMOCOCCAL VACCINE (Pneumonia) ===
+Category: Pneumonia prevention
+Availability: Year-round
+Who Needs It:
+- All adults 65 and older
+- Adults 19-64 with certain conditions (diabetes, heart disease, lung disease, smoking)
+- Children under 5
+Types:
+- PCV20 (Prevnar 20): One dose for most adults
+- PPSV23 (Pneumovax 23): May need in addition to PCV20 for some patients
+Schedule: Usually one-time vaccination, sometimes requires 2 doses 1 year apart
+Side Effects: Mild soreness, redness at injection site, mild fever
+Cost: Covered by Medicare Part B and most insurance
+Important: Prevents serious pneumonia, meningitis, bloodstream infections
+Source: CDC Pneumococcal Vaccination Guidelines
+
+=== TDAP VACCINE (Tetanus, Diphtheria, Pertussis) ===
+Category: Booster vaccine
+Availability: Year-round
+Who Needs It:
+- All adults once, then Td booster every 10 years
+- Pregnant women during each pregnancy (27-36 weeks)
+- Anyone caring for infants
+Why Important: Prevents tetanus (lockjaw), diphtheria, whooping cough
+Side Effects: Arm soreness, redness, mild fever, headache
+Cost: Covered by insurance and Medicare
+Important: Especially crucial for grandparents and caregivers of newborns
+Emergency: Need Td/Tdap within 48 hours of dirty wound if not current
+Source: CDC Vaccination Schedule
+
+=== HEPATITIS B VACCINE ===
+Category: Three-dose series
+Availability: Year-round
+Who Needs It:
+- Healthcare workers
+- Dialysis patients
+- People with diabetes under 60
+- International travelers
+- Adults at risk for hepatitis B
+Schedule: 3 doses over 6 months (0, 1 month, 6 months)
+Side Effects: Sore arm, mild fever, fatigue
+Cost: Covered by most insurance; Medicare Part B for high-risk
+Important: Provides long-term protection against liver disease and cancer
+Source: CDC Hepatitis B Vaccination Guidelines
+
+=== TRAVEL VACCINES ===
+Category: Destination-specific
+Available at CVS MinuteClinic locations
+Common Travel Vaccines:
+- Hepatitis A (food/water-borne illness)
+- Typhoid
+- Yellow Fever (specific clinics only)
+- Japanese Encephalitis
+- Rabies (for high-risk travel)
+Planning: Schedule consultation 4-6 weeks before travel
+Cost: May not be covered by insurance; prices vary
+Important: Some countries require proof of vaccination (Yellow Fever)
+Service: CVS MinuteClinic provides travel health consultations
+Source: CDC Travelers' Health
+
+=== HOW TO SCHEDULE VACCINES AT CVS ===
+Methods:
+1. Online: CVS.com/immunizations/covid-19-vaccine
+2. CVS Pharmacy app
+3. Call local pharmacy: Find at CVS.com/store-locator
+4. Walk-in: Most locations accept walk-ins (wait times may vary)
+
+What to Bring:
+- Insurance card
+- Photo ID
+- Vaccination record card (if you have one)
+
+Insurance:
+- Most vaccines covered 100% by insurance as preventive care
+- Medicare Part B covers flu, pneumonia, Hepatitis B (if high-risk)
+- Medicare Part D covers shingles and other vaccines
+
+Important Notes:
+- Pharmacists can vaccinate patients 5 years and older (varies by state)
+- MinuteClinic vaccinates all ages including infants
+- Vaccine records uploaded to state immunization registry
+- Can receive multiple vaccines in same visit (different arms)
+- After vaccination: Stay 15 minutes for observation
+
+Source: CVS Health Immunization Services

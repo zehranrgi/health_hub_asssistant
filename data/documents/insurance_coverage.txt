@@ -1,0 +1,367 @@
+CVS PHARMACY - INSURANCE AND COVERAGE INFORMATION
+
+=== ACCEPTED INSURANCE PLANS ===
+
+Major Insurance Providers:
+- Aetna (CVS Health company)
+- Blue Cross Blue Shield (most states)
+- Cigna
+- UnitedHealthcare / Optum Rx
+- Humana
+- Medicare Part D plans
+- Medicaid (varies by state)
+- TRICARE
+- Federal Employee Program (FEP)
+- Most commercial insurance plans
+
+Pharmacy Benefit Managers (PBMs):
+- CVS Caremark (preferred)
+- Express Scripts
+- OptumRx
+- MedImpact
+- Prime Therapeutics
+- Most major PBM networks
+
+Check Your Coverage:
+- Call pharmacy: CVS.com/store-locator
+- Online: Log in to CVS.com account
+- Insurance card: Member services number
+- Pharmacist can verify coverage at counter
+
+=== MEDICARE COVERAGE ===
+
+Medicare Part B (Medical Insurance):
+Covers at CVS:
+- Flu shots (100% covered, no copay)
+- Pneumonia vaccines (100% covered)
+- Hepatitis B vaccine (if high-risk, 100% covered)
+- COVID-19 vaccines (100% covered)
+- Certain diabetic supplies
+- Some preventive services at MinuteClinic
+
+Medicare Part D (Prescription Drug Coverage):
+- Covers prescription medications
+- Copays vary by plan and drug tier
+- Generic drugs typically $0-$10 copay
+- Brand drugs: higher copays ($30-$100+)
+- Specialty drugs: often percentage-based copay (25-33%)
+
+Coverage Phases:
+1. Deductible phase: Pay full cost until deductible met
+2. Initial coverage: Pay copays based on tiers
+3. Coverage gap ("donut hole"): Pay 25% of costs
+4. Catastrophic coverage: Pay small amount after out-of-pocket limit
+
+Extra Help (Low-Income Subsidy):
+- Reduces or eliminates Medicare Part D costs
+- Automatic for those on Medicaid or SSI
+- Application: ssa.gov or 1-800-772-1213
+
+Medicare Advantage Plans:
+- Many include prescription coverage
+- May have different copays than original Medicare
+- Check formulary for covered medications
+
+CVS Medicare Services:
+- Medicare Part D plan comparison assistance
+- Medication therapy management (MTM)
+- Compliance programs
+- Pharmacist consultations
+
+=== MEDICAID COVERAGE ===
+
+Eligibility: Varies by state
+Coverage at CVS:
+- Prescription medications (formulary-based)
+- Many preventive services
+- Vaccines
+- MinuteClinic services (most states)
+
+Copays:
+- Typically $0-$5 per prescription
+- May waive copays for certain populations
+- Preventive services usually $0 copay
+
+State Programs:
+- Each state manages own Medicaid formulary
+- Prior authorization may be required for some medications
+- Quantity limits may apply
+
+How to Use:
+- Present Medicaid card at pharmacy
+- Pharmacist verifies eligibility
+- May need prescriber information
+
+=== COMMERCIAL INSURANCE ===
+
+Typical Coverage Tiers:
+Tier 1 (Generic): $5-$15 copay
+Tier 2 (Preferred Brand): $30-$50 copay
+Tier 3 (Non-Preferred Brand): $60-$100 copay
+Tier 4 (Specialty): $100+ or 25-33% coinsurance
+
+Deductibles:
+- Medical deductible may apply to prescriptions
+- High-deductible health plans (HDHP): pay full cost until deductible met
+- Copays may not count toward deductible (varies by plan)
+
+Out-of-Pocket Maximum:
+- After reaching annual limit, insurance pays 100%
+- Typical range: $2,000-$8,000 per person
+
+Formulary:
+- List of covered medications
+- Preferred drugs have lower copays
+- Non-formulary drugs: higher cost or not covered
+- Formulary changes annually (sometimes mid-year)
+
+Prior Authorization:
+- Required for certain expensive or specialty medications
+- Doctor must provide medical justification
+- CVS pharmacists can help initiate PA process
+- Usually takes 24-72 hours for approval
+
+=== PRESCRIPTION COST-SAVING STRATEGIES ===
+
+1. Generic Substitution:
+- Generics are 70-80% cheaper than brand names
+- FDA-approved as equivalent to brand
+- Ask pharmacist about generic options
+- Insurance usually requires generic if available
+
+2. 90-Day Supply:
+- Often 2-3 times cheaper than three 30-day fills
+- Available for maintenance medications
+- Ask doctor for 90-day prescription
+- May require mail order or CVS pharmacy
+
+3. Manufacturer Copay Cards:
+- Reduce or eliminate copays for brand medications
+- Available for most brand-name drugs
+- Find at drug manufacturer website or ask pharmacist
+- Cannot combine with government insurance (Medicare/Medicaid)
+
+4. Patient Assistance Programs:
+- Free or low-cost medications for uninsured/underinsured
+- Income-based eligibility
+- CVS pharmacists can provide information
+- Resources: NeedyMeds.org, RxAssist.org
+
+5. GoodRx and Discount Cards:
+- Alternative pricing for uninsured or high copays
+- Compare prices at CVS.com or GoodRx
+- Cannot combine with insurance
+- Sometimes cheaper than insurance copay
+
+6. Therapeutic Substitution:
+- Different medication in same class
+- May be preferred on formulary (lower copay)
+- Discuss with doctor and pharmacist
+
+7. Pill Splitting:
+- Higher dose split in half = lower cost
+- Only for scored tablets (safe to split)
+- Ask doctor to prescribe double strength
+- Requires pill splitter device
+
+8. CVS Prescription Savings Club:
+- $15/year individual, $20/year family
+- Discounts on select generics and brand drugs
+- For uninsured or medications not covered by insurance
+- Additional discounts on CVS Health products
+
+=== SPECIALTY MEDICATION COVERAGE ===
+
+Characteristics:
+- Treat complex/rare conditions (cancer, MS, hepatitis C, etc.)
+- Very expensive ($1,000-$10,000+ per month)
+- May require special handling or administration
+- Often covered under medical benefit instead of pharmacy benefit
+
+Insurance Coverage:
+- Usually Tier 4 or Tier 5
+- Coinsurance instead of copay (25-33% of cost)
+- May have separate deductible
+- Annual out-of-pocket max still applies
+
+Financial Assistance:
+- Manufacturer patient assistance programs
+- Copay assistance foundations
+- CVS Specialty Pharmacy helps identify programs
+- Financial counseling available
+
+CVS Specialty Pharmacy:
+- Coordinates insurance benefits
+- Handles prior authorizations
+- Connects to financial assistance
+- Provides clinical support
+- Delivers to home
+
+=== PRIOR AUTHORIZATION PROCESS ===
+
+When Required:
+- Expensive medications
+- Drugs with abuse potential
+- Medications requiring step therapy
+- Non-preferred formulary drugs
+- Quantity limits exceeded
+
+Steps:
+1. Pharmacist attempts to fill prescription
+2. Insurance requires prior authorization
+3. Pharmacist contacts prescriber
+4. Doctor submits medical justification to insurance
+5. Insurance approves or denies (24-72 hours typical)
+6. If denied, appeal process available
+
+CVS Support:
+- Pharmacists initiate PA process
+- Follow up with insurance and doctor
+- Notify patient of status
+- Suggest covered alternatives if denied
+
+=== VACCINE COVERAGE ===
+
+Preventive Vaccines (Typically 100% Covered):
+- Flu vaccine
+- COVID-19 vaccine
+- Pneumonia vaccine (age 65+)
+- Shingles vaccine (covered by Medicare Part D, commercial insurance)
+- Tdap/Td booster
+- Hepatitis A & B (if high-risk)
+
+Where Covered:
+- Medicare Part B: Flu, pneumonia, COVID-19, Hepatitis B (high-risk)
+- Medicare Part D: Shingles, other vaccines
+- Commercial insurance: Most vaccines as preventive care (no copay)
+- Affordable Care Act: All recommended vaccines covered
+
+Travel Vaccines:
+- Usually not covered by insurance
+- Pay out-of-pocket
+- May be reimbursed by HSA/FSA
+- Prices available at MinuteClinic
+
+=== HSA/FSA (TAX-ADVANTAGED ACCOUNTS) ===
+
+Health Savings Account (HSA):
+- Paired with high-deductible health plan
+- Contributions tax-deductible
+- Use for prescriptions, copays, medical expenses
+- Funds roll over year to year
+- CVS accepts HSA debit cards
+
+Flexible Spending Account (FSA):
+- Use-it-or-lose-it each year (some plans allow $500+ rollover)
+- Pre-tax contributions
+- Use for prescriptions, OTC medications, health products
+- CVS accepts FSA debit cards
+
+Eligible Expenses at CVS:
+- Prescription medications
+- Insulin (no prescription needed as of 2020)
+- Many OTC medications (with prescription)
+- First aid supplies
+- Diabetic supplies
+- Blood pressure monitors
+- COVID-19 tests
+- Sunscreen (SPF 15+)
+- Contact lens solution
+
+Check Eligibility: FSAstore.com for complete list
+
+=== UNINSURED / CASH PRICING ===
+
+Options for Uninsured:
+1. Generic medications: Ask for cash price
+2. GoodRx coupons: Often 50-80% discount
+3. CVS Prescription Savings Club: $15/year membership
+4. Manufacturer discount cards
+5. Patient assistance programs
+
+Cash Pricing:
+- Can be very expensive for brand medications
+- Generics usually affordable ($10-$40/month)
+- Ask pharmacist for lowest cash price
+- Compare with discount cards
+
+Free Medication Programs:
+- NeedyMeds.org
+- RxAssist.org
+- Partnership for Prescription Assistance
+- Manufacturer patient assistance programs (income-based)
+
+=== CLAIMS AND REJECTIONS ===
+
+Common Rejection Reasons:
+- Not covered by insurance (not on formulary)
+- Prior authorization required
+- Quantity limits exceeded
+- Refill too soon
+- Plan limitations or exclusions
+- Incorrect insurance information
+
+What CVS Does:
+- Pharmacist investigates rejection
+- Contacts insurance for clarification
+- Suggests alternatives if available
+- Helps with prior authorization
+- Provides cash pricing options
+
+Appeals Process:
+- If medication denied, can appeal to insurance
+- Doctor provides medical necessity documentation
+- CVS can assist with appeal process
+- External review available if internal appeal denied
+
+=== CVSCAREPASS & EXTRACARE REWARDS ===
+
+CarePass Benefits:
+- $5/month or $48/year
+- $10 monthly promo reward (pays for itself)
+- Free 1-2 day shipping
+- 20% off CVS Health brand
+
+ExtraCare (Free Program):
+- Earn rewards on purchases
+- 2% back on most CVS purchases
+- Pharmacy & Health Rewards: $5 reward for 10 prescriptions
+- Personalized coupons
+- ExtraBucks rewards
+
+Combining Savings:
+- Use manufacturer copay card for prescription
+- Earn ExtraCare rewards
+- Use ExtraBucks for OTC items
+- CarePass 20% discount on CVS brand
+
+=== QUESTIONS TO ASK YOUR PHARMACIST ===
+
+About Coverage:
+- "Is this medication covered by my insurance?"
+- "What's my copay?"
+- "Is there a cheaper alternative on my formulary?"
+- "Can I use a manufacturer coupon?"
+- "What's the cash price vs. insurance price?"
+
+About Costs:
+- "Is there a generic version?"
+- "Would a 90-day supply save money?"
+- "Are there patient assistance programs?"
+- "Is this cheaper with GoodRx?"
+
+About Prior Authorization:
+- "How long will prior authorization take?"
+- "What information does my doctor need to provide?"
+- "Are there similar medications that don't require PA?"
+
+CVS Commitment:
+- Transparent pricing before you pay
+- Help finding lowest cost option
+- Insurance verification at every fill
+- Assistance with coverage issues
+- No judgment, only support
+
+For Questions: Speak with CVS pharmacist or call 1-800-746-7287
+
+Source: CVS Health Pharmacy Benefits and Insurance Guide 2024

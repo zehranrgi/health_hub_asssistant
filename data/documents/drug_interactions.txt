@@ -1,0 +1,138 @@
+COMMON DRUG INTERACTIONS - CVS PHARMACY SAFETY INFORMATION
+
+=== LISINOPRIL + POTASSIUM SUPPLEMENTS ===
+Interaction Level: MAJOR - Avoid combination
+Risk: Hyperkalemia (dangerously high potassium levels)
+Symptoms: Irregular heartbeat, muscle weakness, slow heart rate
+Why: Lisinopril (ACE inhibitor) reduces potassium excretion. Adding potassium supplements can cause buildup.
+Alternatives: Discuss with doctor before taking potassium supplements or salt substitutes
+Monitoring: Regular blood tests for potassium levels if prescribed together
+Action: Consult pharmacist before starting potassium supplements
+Source: FDA Drug Interaction Database
+
+=== ASPIRIN + IBUPROFEN (NSAIDs) ===
+Interaction Level: MODERATE - Use with caution
+Risk: Increased bleeding risk, stomach ulcers, reduced aspirin heart protection
+Why: Both are NSAIDs; combining increases gastrointestinal bleeding risk
+Effect: Ibuprofen can block aspirin's heart-protective effects
+Recommendation: If taking daily aspirin for heart:
+- Take aspirin first, wait 30 minutes before ibuprofen
+- Or take ibuprofen at least 8 hours before or 30 minutes after aspirin
+- Better alternative: Use acetaminophen (Tylenol) for pain instead
+Monitoring: Watch for black/bloody stools, stomach pain
+Source: American Heart Association Guidelines
+
+=== METFORMIN + ALCOHOL ===
+Interaction Level: MODERATE - Limit alcohol
+Risk: Lactic acidosis (serious, life-threatening condition)
+Symptoms: Muscle pain, weakness, difficulty breathing, stomach pain, dizziness
+Why: Both metformin and alcohol can cause lactic acid buildup
+Recommendation: Limit alcohol intake, avoid excessive drinking
+Warning: Never binge drink while taking metformin
+Action: If drinking, have small amounts with food, monitor blood sugar
+Source: FDA Medication Guide
+
+=== STATINS (Atorvastatin, Simvastatin) + GRAPEFRUIT JUICE ===
+Interaction Level: MAJOR - Avoid combination
+Risk: Significantly increased statin levels, severe muscle damage (rhabdomyolysis)
+Why: Grapefruit juice blocks enzyme that breaks down statins
+Effect: Can increase statin levels 3-16 times normal
+Symptoms of toxicity: Severe muscle pain, weakness, dark urine, kidney damage
+Recommendation: Avoid grapefruit juice entirely if taking statins
+Note: One glass can affect medication for 24+ hours
+Alternatives: Orange juice, cranberry juice are safe
+Source: FDA Drug Safety Communication
+
+=== BLOOD THINNERS (Warfarin) + ASPIRIN/NSAIDs ===
+Interaction Level: MAJOR - Use only under doctor supervision
+Risk: Severe bleeding, hemorrhage
+Why: Both thin blood through different mechanisms; effects multiply
+Symptoms: Easy bruising, bloody/black stools, blood in urine, severe headache, prolonged bleeding
+Monitoring: Requires frequent INR blood tests if prescribed together
+Important: Always inform all doctors and dentists you're on blood thinners
+Emergency: Seek immediate care for unusual bleeding, falls, head injuries
+Source: American College of Cardiology
+
+=== LEVOTHYROXINE + CALCIUM/IRON SUPPLEMENTS ===
+Interaction Level: MODERATE - Separate doses
+Risk: Reduced thyroid medication absorption, treatment failure
+Effect: Can decrease levothyroxine effectiveness by 20-30%
+Recommendation: Take levothyroxine on empty stomach
+- Wait 4 hours before calcium or iron supplements
+- Wait 4 hours after antacids
+Also interacts with: Multivitamins, calcium-fortified juice, soy products
+Timing: Take levothyroxine first thing in morning, supplements later in day
+Source: American Thyroid Association
+
+=== ANTIBIOTICS + BIRTH CONTROL PILLS ===
+Interaction Level: MODERATE - Use backup contraception
+Risk: Reduced birth control effectiveness, unplanned pregnancy
+Antibiotics that interact: Rifampin (major), some others (minor)
+Effect: May reduce hormone levels in birth control
+Recommendation: Use backup contraception (condoms) during antibiotic treatment and 7 days after
+Important: Tell your doctor you're on birth control when prescribed antibiotics
+Note: Most common antibiotics have minimal interaction, but use caution
+Source: American College of Obstetricians and Gynecologists
+
+=== AMLODIPINE + SIMVASTATIN ===
+Interaction Level: MODERATE - Dose limitation required
+Risk: Increased risk of muscle damage (myopathy/rhabdomyolysis)
+Why: Amlodipine increases simvastatin blood levels
+Recommendation: Simvastatin should not exceed 20mg daily when taking amlodipine
+Symptoms to watch: Unexplained muscle pain, tenderness, weakness
+Alternative: Atorvastatin doesn't have same interaction
+Action: Verify your simvastatin dose with pharmacist
+Source: FDA Dosing Recommendations
+
+=== OMEPRAZOLE (PPIs) + CLOPIDOGREL (Plavix) ===
+Interaction Level: MAJOR - Avoid combination
+Risk: Reduced blood thinner effectiveness, increased heart attack/stroke risk
+Why: Omeprazole blocks enzyme needed to activate clopidogrel
+Effect: Clopidogrel may not prevent blood clots effectively
+Alternatives for heartburn:
+- Famotidine (Pepcid)
+- Antacids
+- H2 blockers
+Important: Critical for patients with heart stents
+Action: Discuss with cardiologist before taking PPIs with clopidogrel
+Source: FDA Drug Safety Alert
+
+=== GENERAL INTERACTION CATEGORIES ===
+
+HIGH RISK COMBINATIONS:
+1. Multiple blood thinners
+2. Multiple CNS depressants (sedatives, opioids, alcohol)
+3. Multiple medications affecting same organ (liver/kidney)
+4. Drugs with narrow therapeutic window (warfarin, lithium, digoxin)
+
+COMMON INTERACTIONS TO AVOID:
+- Alcohol + sedatives/sleeping pills = dangerous sedation
+- MAO inhibitors + certain foods (aged cheese, wine) = hypertensive crisis
+- Antibiotics + dairy products = reduced absorption
+- Diabetes medications + beta blockers = masked low blood sugar symptoms
+
+HOW TO PREVENT DRUG INTERACTIONS:
+1. Keep complete medication list including OTC drugs, supplements, vitamins
+2. Use one pharmacy for all prescriptions
+3. Inform all healthcare providers of all medications
+4. Ask pharmacist to check interactions before starting new medication
+5. Read medication guides and warning labels
+6. Don't share medications with others
+7. Report any unusual symptoms to doctor/pharmacist
+
+WHEN TO CALL PHARMACIST:
+- Starting any new medication (prescription or OTC)
+- Adding supplements or vitamins
+- Experiencing new or unusual symptoms
+- Before taking medications together for first time
+- Questions about timing of doses
+- Concerned about potential interaction
+
+CVS PHARMACY SERVICES:
+- Free medication interaction check
+- Medication therapy management for complex regimens
+- Pharmacist consultation available at all locations
+- Automatic interaction screening with each prescription
+- 24/7 Pharmacy helpline
+
+Source: CVS Health Medication Safety Program

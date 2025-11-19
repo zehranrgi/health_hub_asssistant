@@ -1,0 +1,70 @@
+COMMON MEDICATIONS - CVS HEALTH INFORMATION
+
+=== LISINOPRIL (Blood Pressure Medication) ===
+Category: ACE Inhibitor
+Uses: Treats high blood pressure (hypertension) and heart failure. Helps prevent strokes, heart attacks, and kidney problems.
+Dosage: Typically 10-40mg once daily. Take at the same time each day.
+Side Effects: Dizziness, headache, persistent dry cough, fatigue. Serious: swelling of face/lips/tongue, difficulty breathing.
+Warnings: Do not use if pregnant. May cause dizziness - avoid driving until you know how it affects you.
+Interactions: Potassium supplements, NSAIDs (ibuprofen), diuretics. Consult pharmacist.
+Source: FDA approved medication information
+
+=== METFORMIN (Diabetes Medication) ===
+Category: Antidiabetic (Biguanide)
+Uses: Controls high blood sugar in type 2 diabetes. Helps prevent kidney damage, blindness, nerve problems, and cardiovascular disease.
+Dosage: Usually 500mg-2000mg daily with meals. Extended-release: once daily with evening meal.
+Side Effects: Nausea, stomach upset, diarrhea, metallic taste. Usually improves over time.
+Warnings: Risk of lactic acidosis (rare but serious). Avoid alcohol. Tell doctor before any surgery or X-ray procedures.
+Interactions: Certain blood pressure medications, diuretics, corticosteroids may affect blood sugar control.
+Monitoring: Regular blood sugar testing and HbA1c checks every 3 months.
+Source: FDA approved medication information
+
+=== ATORVASTATIN (Lipitor - Cholesterol Medication) ===
+Category: Statin
+Uses: Lowers bad cholesterol (LDL) and triglycerides, raises good cholesterol (HDL). Prevents heart attacks and strokes.
+Dosage: 10-80mg once daily, can be taken any time of day with or without food.
+Side Effects: Muscle pain/weakness, headache, nausea, joint pain. Rare: liver problems, memory loss.
+Warnings: Avoid grapefruit juice (can increase medication levels). Report unexplained muscle pain immediately.
+Interactions: Some antibiotics, antifungals, and other cholesterol medications.
+Lab Tests: Liver function tests before starting and periodically during treatment.
+Source: FDA approved medication information
+
+=== AMLODIPINE (Norvasc - Blood Pressure Medication) ===
+Category: Calcium channel blocker
+Uses: Treats high blood pressure and chest pain (angina). Relaxes blood vessels.
+Dosage: 2.5-10mg once daily. Can be taken with or without food.
+Side Effects: Swelling in ankles/feet, dizziness, flushing, fatigue, palpitations.
+Warnings: May cause dizziness especially when starting. Rise slowly from sitting/lying position.
+Interactions: Grapefruit juice, certain antibiotics, antifungals, simvastatin.
+Benefits: Works gradually - may take 1-2 weeks to see full blood pressure reduction.
+Source: FDA approved medication information
+
+=== OMEPRAZOLE (Prilosec - Heartburn/GERD Medication) ===
+Category: Proton pump inhibitor (PPI)
+Uses: Treats frequent heartburn, GERD, stomach ulcers. Reduces stomach acid production.
+Dosage: 20-40mg once daily, 30-60 minutes before a meal. Short-term use recommended (4-8 weeks).
+Side Effects: Headache, nausea, diarrhea, stomach pain, gas.
+Warnings: Long-term use may increase risk of bone fractures, vitamin B12 deficiency, kidney problems.
+Interactions: May affect absorption of certain medications including blood thinners, antifungals, HIV medications.
+Important: Take before eating for best effect. Do not crush delayed-release capsules.
+Source: FDA approved medication information
+
+=== LEVOTHYROXINE (Synthroid - Thyroid Medication) ===
+Category: Thyroid hormone replacement
+Uses: Treats hypothyroidism (underactive thyroid). Replaces or supplements thyroid hormone.
+Dosage: Individualized based on blood tests. Take on empty stomach, 30-60 minutes before breakfast.
+Side Effects: Usually minimal when properly dosed. Over-medication: rapid heartbeat, anxiety, weight loss, tremors.
+Warnings: Takes 4-6 weeks to see full effect. Do not switch brands without consulting doctor.
+Interactions: Calcium, iron supplements, antacids reduce absorption - take 4 hours apart.
+Monitoring: TSH blood tests every 6-12 months to adjust dose.
+Source: FDA approved medication information
+
+=== ASPIRIN (Pain Relief & Heart Protection) ===
+Category: NSAID / Antiplatelet
+Uses: Low-dose (81mg): Prevents heart attacks and strokes. Regular strength (325mg): Pain, fever, inflammation.
+Dosage: Heart protection: 81mg daily. Pain: 325-650mg every 4-6 hours as needed.
+Side Effects: Stomach upset, heartburn, increased bleeding risk, ringing in ears (high doses).
+Warnings: Do not use in children with viral infections (Reye's syndrome risk). Increases bleeding risk.
+Interactions: Blood thinners, other NSAIDs, alcohol increase bleeding risk.
+Important: Take with food to reduce stomach upset. Consult doctor before daily aspirin therapy.
+Source: FDA approved medication information

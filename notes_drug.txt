@@ -1,0 +1,24 @@
+Ücretsiz Healthcare Data Kaynakları:
+1. FDA Drug Database (EN İYİ) ⭐⭐⭐
+URL: https://open.fda.gov/
+API: https://api.fda.gov/drug/label.json
+Data: İlaç bilgileri, side effects, interactions
+Format: JSON API
+Örnek: https://api.fda.gov/drug/label.json?search=brand_name:Lipitor&limit=1
+2. CDC Vaccine Information
+URL: https://www.cdc.gov/vaccines/
+Data: Vaccine schedules, guidelines, safety info
+Format: Web scraping veya manual download
+3. MedlinePlus (NIH)
+URL: https://medlineplus.gov/
+API: https://medlineplus.gov/webservices.html
+Data: Drug information, health topics
+Format: XML API
+4. DrugBank (Academic free)
+URL: https://go.drugbank.com/
+Data: Comprehensive drug database
+Format: XML download (free for academic)
+5. RxNorm (NLM)
+URL: https://www.nlm.nih.gov/research/umls/rxnorm/
+API: https://rxnav.nlm.nih.gov/
+Data: Normalized drug names, relationships
