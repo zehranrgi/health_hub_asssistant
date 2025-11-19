@@ -220,7 +220,7 @@ Performance metrics and statistics
 # Run performance benchmark
 python evaluation/quick_benchmark.py
 
-# Results: 100% success rate, 3.33/4.0 GPA
+# Results: 
 
 # Run RAGAS evaluation (requires datasets package)
 python evaluation/run_evaluation.py
@@ -301,7 +301,7 @@ Ready for deployment to Azure Container Apps via GitHub Actions CI/CD pipeline.
 ## 🎓 Skills Demonstrated
 
 This project showcases:
-- **Python** - 500+ lines across multiple modules
+- **Python** - 
 - **LangChain/LangGraph** - Advanced agentic workflows
 - **RAG Systems** - Document chunking, embeddings, retrieval
 - **Vector Databases** - ChromaDB with semantic search
@@ -318,9 +318,4 @@ This project showcases:
 This project is for portfolio and demonstration purposes.
 
 ---
-
-## 🙋 Contact
-
-Built as a demonstration project for CVS Health Digital Workplace AI team application.
-
 **Technologies**: LangGraph | ChromaDB | OpenRouter | FastAPI | Streamlit | RAGAS
