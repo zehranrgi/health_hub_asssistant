@@ -20,74 +20,186 @@ st.set_page_config(
     initial_sidebar_state="expanded"
 )
 
-# Custom CSS
+# Custom CSS - Dark Theme Compatible
 st.markdown("""
 <style>
-    body {
-        background-color: #0a0e27 !important;
-        color: #e0e0e0 !important;
+    /* Root Variables for Theme Support */
+    :root {
+        --bg-primary: #0e1117;
+        --bg-secondary: #161b22;
+        --text-primary: #e6edf3;
+        --text-secondary: #8b949e;
+        --border-color: #30363d;
+        --accent-red: #da3633;
+        --accent-blue: #58a6ff;
     }
+
+    /* Main Background and Text */
+    .stApp {
+        background-color: var(--bg-primary);
+        color: var(--text-primary);
+        font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    }
+
+    /* Header Styling */
     .main-header {
-        font-size: 3.5rem;
-        font-weight: 900;
-        background: linear-gradient(135deg, #FF4444 0%, #FF8888 100%);
-        -webkit-background-clip: text;
-        -webkit-text-fill-color: transparent;
-        background-clip: text;
+        font-size: 3rem;
+        font-weight: 800;
+        color: #ff4444;
         text-align: center;
         margin-bottom: 0.5rem;
-        letter-spacing: 2px;
+        letter-spacing: -1px;
+        text-shadow: 1px 1px 3px rgba(255,0,0,0.2);
     }
+
     .sub-header {
-        font-size: 1.3rem;
-        color: #b0b0b0;
+        font-size: 1.2rem;
+        color: var(--text-secondary);
         text-align: center;
-        margin-bottom: 2rem;
-        font-weight: 300;
-        letter-spacing: 1px;
+        margin-bottom: 2.5rem;
+        font-weight: 400;
     }
+
+    /* Chat Message Styling */
     .stChatMessage {
-        background-color: #1a1f3a !important;
-        border-radius: 15px !important;
-        padding: 1rem !important;
+        border-radius: 12px !important;
+        padding: 1.5rem !important;
+        margin-bottom: 1rem !important;
+        border-left: 4px solid;
     }
-    .stChatMessage p, .stChatMessage div {
-        color: #e0e0e0 !important;
+
+    /* User Message */
+    .stChatMessage[data-testid="chatMessage"] {
+        background-color: var(--bg-secondary) !important;
+        border-left-color: var(--accent-blue) !important;
     }
-    [data-testid="chatAvatarIcon-assistant"],
-    [data-testid="chatAvatarIcon-user"] {
-        background-color: transparent !important;
+
+    .stChatMessage[data-testid="chatMessage"] p,
+    .stChatMessage[data-testid="chatMessage"] span {
+        color: var(--text-primary) !important;
     }
-    .chat-box-assistant {
-        background: linear-gradient(135deg, #1a2340 0%, #16213e 100%);
-        color: #e0e0e0;
-        padding: 20px;
-        border-radius: 15px;
-        margin: 15px auto;
-        max-width: 800px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.4);
-        border-left: 5px solid #FF6B6B;
-        font-size: 1.05rem;
-        line-height: 1.6;
+
+    /* Sidebar Styling */
+    [data-testid="stSidebar"] {
+        background-color: var(--bg-secondary);
+        border-right: 1px solid var(--border-color);
     }
-    .chat-box-user {
-        background: linear-gradient(135deg, #1f3a52 0%, #1a3a52 100%);
-        color: #e0e0e0;
-        padding: 20px;
-        border-radius: 15px;
-        margin: 15px auto;
-        max-width: 800px;
-        box-shadow: 0 4px 15px rgba(0,0,0,0.4);
-        border-right: 5px solid #64B5F6;
-        font-size: 1.05rem;
-        line-height: 1.6;
+
+    [data-testid="stSidebar"] h1,
+    [data-testid="stSidebar"] h2,
+    [data-testid="stSidebar"] h3 {
+        color: #ff4444;
+    }
+
+    [data-testid="stSidebar"] p,
+    [data-testid="stSidebar"] span {
+        color: var(--text-primary) !important;
+    }
+
+    /* Button Styling */
+    .stButton button {
+        background-color: var(--bg-secondary);
+        color: var(--text-primary);
+        border: 1px solid var(--border-color);
+        border-radius: 8px;
+        transition: all 0.3s ease;
+        font-weight: 500;
+    }
+
+    .stButton button:hover {
+        border-color: #ff4444;
+        color: #ff4444;
+        background-color: rgba(255,68,68,0.1);
+        transform: translateY(-1px);
+        box-shadow: 0 2px 8px rgba(255,68,68,0.2);
+    }
+
+    /* Primary Button (Analyze) */
+    button[kind="primary"] {
+        background-color: #ff4444 !important;
+        color: white !important;
+        border: none !important;
+    }
+
+    button[kind="primary"]:hover {
+        background-color: #ff5555 !important;
+    }
+
+    /* Text Input Styling */
+    .stTextInput input,
+    .stTextArea textarea {
+        background-color: var(--bg-secondary) !important;
+        color: var(--text-primary) !important;
+        border-color: var(--border-color) !important;
+    }
+
+    /* Select and Dropdown */
+    select {
+        background-color: var(--bg-secondary) !important;
+        color: var(--text-primary) !important;
+    }
+
+    /* Input Box Styling */
+    .stChatInputContainer {
+        padding-bottom: 2rem;
+    }
+
+    .stChatInputContainer textarea {
+        border-radius: 12px !important;
+        border: 1px solid var(--border-color) !important;
+        padding: 12px 16px !important;
+        font-size: 1rem !important;
+        background-color: var(--bg-secondary) !important;
+        color: var(--text-primary) !important;
+    }
+    
+    .stChatInputContainer textarea:focus {
+        border-color: #ff4444 !important;
+        box-shadow: 0 4px 15px rgba(255,68,68,0.2) !important;
+    }
+
+    /* Status Indicators */
+    .stAlert {
+        border-radius: 8px;
+        border: none;
+        background-color: var(--bg-secondary) !important;
+        color: var(--text-primary) !important;
+    }
+
+    /* Headers and Text */
+    h1, h2, h3, h4, h5, h6 {
+        color: var(--text-primary) !important;
+    }
+
+    p, span, label {
+        color: var(--text-primary) !important;
+    }
+
+    .stInfo {
+        background-color: rgba(88, 166, 255, 0.1) !important;
+        border-color: var(--accent-blue) !important;
+    }
+
+    .stSuccess {
+        background-color: rgba(26, 188, 156, 0.1) !important;
+        border-color: #1abc9c !important;
+    }
+
+    .stWarning {
+        background-color: rgba(241, 196, 15, 0.1) !important;
+        border-color: #f1c40f !important;
+    }
+
+    .stError {
+        background-color: rgba(255, 68, 68, 0.1) !important;
+        border-color: #ff4444 !important;
     }
 </style>
 """, unsafe_allow_html=True)
 
 # Header
-st.markdown('<p class="main-header">🏥 CVS HealthHub AI Assistant</p>', unsafe_allow_html=True)
-st.markdown('<p class="sub-header">Your intelligent healthcare information companion</p>', unsafe_allow_html=True)
+st.markdown('<div class="main-header">🏥 CVS HealthHub AI</div>', unsafe_allow_html=True)
+st.markdown('<div class="sub-header">Intelligent Knowledge Assistant for Digital Workplace</div>', unsafe_allow_html=True)
 
 # Sidebar
 with st.sidebar:
@@ -204,8 +316,8 @@ if "selected_query" in st.session_state:
 else:
     user_input = st.chat_input("Ask about medications, vaccines, services, or insurance...")
 
-# Process user input
-if user_input:
+# Process user input - only if there's actual new input
+if user_input and user_input.strip():
     # Display user message
     with st.chat_message("user"):
         st.markdown(user_input)
