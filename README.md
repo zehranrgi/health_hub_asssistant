@@ -55,7 +55,7 @@ CVS HealthHub AI
 
 1. **Clone and navigate to project**
 ```bash
-cd barber_Rag_agent2
+cd health_hub_assistant
 ```
 
 2. **Install dependencies**
