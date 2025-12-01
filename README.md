@@ -21,7 +21,6 @@ An intelligent agentic AI system designed for CVS Health's Digital Workplace AI 
 ### 📊 Performance Metrics
 - ⚡ **11.4s Avg Response** - Real-world performance on free tier
 - 🎯 **1.7 Avg Tool Calls** - Efficient multi-agent orchestration
-- 🏆 **3.33/4.0 Overall GPA** - Production-quality system
 
 ---
 
